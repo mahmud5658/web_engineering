@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurant Menu Styles</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff9e6;
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 0 20px;
+      color: #5e3c00;
+    }
+    h2 {
+      border-bottom: 2px solid #f4d97f;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+    }
+    ol {
+      margin-bottom: 30px;
+      padding-left: 1.4em;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    ol[type="A"] {
+      list-style-type: upper-alpha;
+      color: #a67c00;
+    }
+    ol[type="a"] {
+      list-style-type: lower-alpha;
+      color: #8c6c00;
+    }
+    ol[type="I"] {
+      list-style-type: upper-roman;
+      color: #d2a800;
+    }
+    ol[type="i"] {
+      list-style-type: lower-roman;
+      color: #c19f00;
+    }
+    ol[start="5"] {
+      list-style-type: decimal;
+      color: #a67c00;
+    }
+    li {
+      padding: 6px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Starters (Type A)</h2>
+  <ol type="A">
+    <li>Garlic Bread</li>
+    <li>Caesar Salad</li>
+  </ol>
+
+  <h2>Main Course</h2>
+  <ol type="a">
+    <li>Grilled Chicken</li>
+    <li>Spaghetti Bolognese</li>
+  </ol>
+
+  <h2>Desserts</h2>
+  <ol type="I">
+    <li>Chocolate Lava Cake</li>
+    <li>Cheesecake</li>
+  </ol>
+
+  <h2>Beverages</h2>
+  <ol type="i">
+    <li>Iced Coffee</li>
+    <li>Lemonade</li>
+  </ol>
+
+  <h2>Special Combo Deals</h2>
+  <ol start="5">
+    <li>Family Meal Combo</li>
+    <li>Weekend Feast</li>
+  </ol>
+
+</body>
+</html>
