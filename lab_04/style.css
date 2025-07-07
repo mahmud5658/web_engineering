@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgb(49, 44, 44);
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+h1, h3 {
+  color: azure;
+}
+a {
+  color: white;
+}
+#searchButton {
+  color: rgb(19, 18, 18);
+  background-color: yellow;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+}
+input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+}
+#cartIcon, sub {
+  color: white;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 40px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+.card {
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+.card-category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.card-price {
+  font-size: 16px;
+  color: #e91e63;
+  font-weight: bold;
+}
+.footer {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footerText {
+  color: white;
+  text-align: center;
+}
+.items-dropdown, .offer-dropdown {
+  position: relative;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.dropdown-menu1, .dropdown-menu2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  padding: 8px 0;
+  margin: 0;
+  width: 140px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.items-dropdown:hover .dropdown-menu1,
+.offer-dropdown:hover .dropdown-menu2 {
+  display: block;
+}
+.dropdown-menu1 li a, .dropdown-menu2 li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu1 li a:hover,
+.dropdown-menu2 li a:hover {
+  background-color: #f0f0f0;
+}
+.backgroundImage {
+  height: 50vh;
+  background-image: url('https://images.pexels.com/photos/2775827/pexels-photo-2775827.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.oferButton {
+  background-color: green;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.oferButton:hover {
+  background-color: darkgreen;
+}
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+.cart-sidebar.show {
+  right: 0;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.cart-sidebar img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+.add-to-cart-btn {
+  margin-top: 10px;
+  background-color: orange;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-to-cart-btn:hover {
+  background-color: darkorange;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.quantity-controls button {
+  padding: 3px 8px;
+  font-size: 16px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.quantity-controls button:hover {
+  background-color: #bbb;
+}
+.cart-item-quantity {
+  font-size: 16px;
+  font-weight: bold;
+}

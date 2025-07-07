@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasty Bites Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav>
+    <h1>Tasty Bites Café</h1>
+    <a href="https://github.com/mahmud5658" target="_blank">Account</a>
+
+    <div class="items-dropdown">
+      <h3>Menu</h3>
+      <ul class="dropdown-menu1">
+        <li><a href="#">Cheeseburger</a></li>
+        <li><a href="#">Hot Dog</a></li>
+        <li><a href="#">Cappuccino</a></li>
+      </ul>
+    </div>
+
+    <div class="offer-dropdown">
+      <h3>Special Offers</h3>
+      <ul class="dropdown-menu2">
+        <li><a href="#">Family Feast</a></li>
+        <li><a href="#">Burger Combo</a></li>
+        <li><a href="#">Coffee & Cake Deal</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <input type="text" placeholder="Search for a dish..." />
+      <button id="searchButton">Search</button>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-cart-shopping" id="cartIcon" onclick="toggleCart()">
+        <sub id="cartCount">0</sub>
+      </i>
+    </div>
+  </nav>
+  <!-- End Nav -->
+
+  <section class="backgroundImage">
+    <button class="oferButton">
+      <h3>Order Now</h3>
+    </button>
+  </section>
+
+  <!-- Card Section -->
+  <div class="card-container" id="cardContainer"></div>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <!-- Footer -->
+  <section style="height: 100px;"></section>
+  <footer class="footer">
+    <p class="footerText">Abdullah Al Mahmud</p>
+    <p><a href="mailto:mahmud15-5658@gmail.com" style="color: black;">mahmud15-5658@gmail.com</a></p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
